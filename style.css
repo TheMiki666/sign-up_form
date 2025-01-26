@@ -146,6 +146,12 @@ button, .login{
     color:  var(--smoke-green);
 }
 
+.inputs input:focus{
+    box-shadow: inset #777 2px 2px 2px 2px;
+    border: 3px solid blue;
+    margin-bottom: 6px;
+}
+
 input:valid{
     background-color: var(--valid-green);
 }
@@ -153,3 +159,10 @@ input:valid{
 input:invalid{
     background-color: var(--invalid-red);
 }
+
+input[type="password"]:invalid, input[type="confirm"]:invalid{
+    border-color: red;
+    border-width: 2px;
+    margin-bottom: 8px;
+}
+
