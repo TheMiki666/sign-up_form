@@ -7,6 +7,8 @@
     --smoke-green:  rgb(71, 131, 71);
     --light-air:    #f0fafb;
     --title-transparency: rgba(42, 44, 46, 0.5);
+    --main-contrast: rgb(248, 243, 218);
+    --shadow: #777;
 
 }
 body{
@@ -15,7 +17,7 @@ body{
    background-color: var(--light-air);
    display: flex;
    flex-direction: row;
-   font-family: Helvetica, Arial, Helvetica, sans-serif;
+   font-family: Helvetica, Arial, Helvetica, sans-serif, system-ui;
    height: 100vh;
    
 }
@@ -32,21 +34,36 @@ aside{
     background-image: url("images/aside_bg.jpg");
     background-position: top left;
     background-size: 100vh;
+    position: relative;
  
 }
 
 main{
-    background-color: antiquewhite;
+    background-color: var(--main-contrast);
     width: 65%;
     flex: 1 1 auto;
     padding: 20px;
 }
 
 .title h1{
-    font-family: quicksand, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: quicksand, Verdana, Geneva, Tahoma, sans-serif, system-ui;
     font-size: 5rem;
     padding-left: 10%;
     color: white;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+form p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 10px 20px;
 }
 
 .title{
@@ -61,7 +78,7 @@ main{
     position: absolute;
     bottom: 0;
     padding-left: 20px;
-    padding-bottom: 20px;s;
+    padding-bottom: 20px;
     font-size: 0.8rem;
 }
 
@@ -74,14 +91,19 @@ main{
 }
 
 form{
+    position: relative;
     display: flex;
     flex-direction: column;
+    --valid-green:  rgb(190, 252, 190);
+    --invalid-red: rgb(248, 187, 187);
+    
 }
 
 .inputs{
     display: flex;
     flex-direction: row;
-    box-shadow: #777 0px 7px 20px 0px;
+    box-shadow: var(--shadow) 0px 7px 20px 0px;
+    
 }
 
 .inputs > div{
@@ -100,7 +122,8 @@ form{
 .inputs input{
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px inset gray;
+   
 }
 
 button{
@@ -121,4 +144,12 @@ button, .login{
 
 .login a:link, .login a:visited{
     color:  var(--smoke-green);
+}
+
+input:valid{
+    background-color: var(--valid-green);
+}
+
+input:invalid{
+    background-color: var(--invalid-red);
 }

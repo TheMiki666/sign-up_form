@@ -25,20 +25,21 @@
         <form action="#" method="post">
             <div class="inputs">
                 <div class="group1">
+                    <p>Join us!</p>
                     <label for="first_name">First name</label>
                     <input type="text" required placeholder="Loki" minlength="2" maxlength="25" name="first_name">
                     <label for="mail">E-mail</label>
                     <input type="email" required placeholder="my_email@asgard.com" name="mail">
                     <label for="password">Password</label>
-                    <input type="password" required minlength="2" maxlength="30" name="password">
+                    <input type="password" required minlength="8" maxlength="30" name="password">
                 </div>
                 <div class="group2">
                     <label for="last_name">Last name</label>
-                    <input type="text" required placeholder="Icegiant" name="last_name">
+                    <input type="text" required placeholder="Icegiant" minlength="2" maxlength="25" name="last_name">
                     <label for="phone">Phone number</label>
-                    <input type="tel" placeholder="+34 666 999 666" name="phone">
+                    <input type="text" placeholder="+34666999666" required name="phone" pattern="^\+?[1-9]\d{1,14}$">
                     <label for="confirm_password">Confirm password</label>
-                    <input type="password" required minlength="2" maxlength="30" name="onfirm_password">
+                    <input type="password" required minlength="8" maxlength="30" name="onfirm_password">
                 </div>
             </div>
             <button type="submit">Create account</button>

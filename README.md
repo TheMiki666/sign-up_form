@@ -21,3 +21,15 @@ The inputs, by default have a very light border (#E5E7EB), but we’ve included 
 The other variation is the selected input, which should have a blue border and subtle box-shadow. This can be done with the :focus pseudo-class you’ve learned about in an earlier lesson.
 Do not worry about making your project look nice on mobile. Responsive design isn’t covered until later in the curriculum.
 Validating that the password fields match each other requires JavaScript. Using JavaScript to validate forms is covered in a future lesson. For now, just validate each field separately.
+
+# Commentaries
+I used a little bit of each subjet we have studied in this course:
+
+A little bit of validation in my life
+A little bit of positioning by my side
+A little bit of background's all I need
+A little bit of transparency's what I see
+A little bit of variables in the Sun
+A little bit of reset all night long
+A little bit of font-face, here I am
+A little bit of units makes me your man
