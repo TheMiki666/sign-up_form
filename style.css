@@ -1,0 +1,56 @@
+@font-face {
+    font-family: quicksand;
+    src: url(fonts/quicksand-regular-webfont.woff);
+}
+
+body{
+   width: 1200px;
+   margin: 0 auto; 
+   background-color: aquamarine;
+   display: flex;
+   flex-direction: row;
+   font-family: Helvetica, Arial, Helvetica, sans-serif;
+   
+}
+
+aside{
+    background-color: goldenrod;
+    width:  35%;
+    flex: 1 1 auto;
+    background-image: url("images/aside_bg.jpg");
+}
+
+main{
+    background-color: antiquewhite;
+    width: 65%;
+    flex: 1 1 auto;
+    padding: 20px;
+}
+
+.title h1{
+    font-family: quicksand, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    padding: 20px 100px;
+    color: white;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: rgba(42, 44, 46, 0.5);
+}
+
+.title > *{
+    display: inline;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+}
